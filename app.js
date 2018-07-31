@@ -7,7 +7,7 @@ window.onload = function() {
 
 playerX = playerY = 10;
 gridSize = 15
-tileCount = 32;
+tileCount = 28;
 foodX = foodY = 15;
 xVelocity = yVelocity = 0;
 trail = [];
