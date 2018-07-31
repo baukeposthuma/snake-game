@@ -60,19 +60,23 @@ function game() {
     context.fillRect(foodX * gridSize, foodY * gridSize, gridSize - 2, gridSize - 2);
 }
 
-function keyPress(evt) {
-    switch(evt.keyCode) {
+function keyPress(e) {
+    switch(e.keyCode) {
         case 37:
             xVelocity = -1; yVelocity = 0;
+            e.preventDefault();
             break;
         case 38:
             xVelocity = 0; yVelocity = -1;
+            e.preventDefault();
             break;
         case 39:
             xVelocity = 1; yVelocity = 0;
+            e.preventDefault();
             break;
         case 40:
             xVelocity = 0; yVelocity = 1;
+            e.preventDefault();
             break;
     }
 }
