@@ -14,6 +14,8 @@ trail = [];
 tail = 5;
 scoreTitle = document.getElementById("score")
 score = 0;
+highScoreTitle = document.getElementById("highscore")
+highScore = 0;
 
 function game() {
 
@@ -44,8 +46,12 @@ function game() {
 		context.fillRect(trail[i].x*gridSize,trail[i].y*gridSize,gridSize-2,gridSize-2);
 		if(trail[i].x == playerX && trail[i].y == playerY) {
             tail = 5;
-            score = 0;
             scoreTitle.innerHTML = "Score: " + score;
+            if (score > highScore) {
+                highScore = score;
+                highScoreTitle.innerHTML = "Highscore: " + highScore;
+            }
+            score = 0;
 		}
 	}
 
