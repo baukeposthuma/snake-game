@@ -15,8 +15,8 @@ body {
 }
 
 .playground {
-    border-left: 1px dashed #fff;
-    border-right: 1px dashed #fff;
+    border-left: 2px dashed rgba(255,255,255,.4);
+    border-right: 2px dashed rgba(255,255,255,.4);
     height: 480px;
     width: 480px;
     margin: 0 auto;
