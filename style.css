@@ -1,0 +1,23 @@
+body {
+    background-color: #0d1433;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    
+}
+
+.playground-wrapper {
+    border: 2px solid #fff;
+}
+
+.playground {
+    border-left: 1px dashed #fff;
+    border-right: 1px dashed #fff;
+    height: 480px;
+    width: 480px;
+    margin: 0 auto;
+}
