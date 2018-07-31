@@ -42,7 +42,7 @@ function game() {
     context.fillStyle = "#ffffff";
     for( var i=0; i<trail.length; i++ ) {
 		context.fillRect(trail[i].x*gridSize,trail[i].y*gridSize,gridSize-2,gridSize-2);
-		if(trail[i].x==playerX && trail[i].y==playerY) {
+		if(trail[i].x == playerX && trail[i].y == playerY) {
             tail = 5;
             score = 0;
             scoreTitle.innerHTML = "Score: " + score;
@@ -69,19 +69,48 @@ function game() {
 function keyPress(e) {
     switch(e.keyCode) {
         case 37:
-            xVelocity = -1; yVelocity = 0;
+            changeDirection("left");
             e.preventDefault();
             break;
         case 38:
-            xVelocity = 0; yVelocity = -1;
+            changeDirection("up");
             e.preventDefault();
             break;
         case 39:
-            xVelocity = 1; yVelocity = 0;
+            changeDirection("right");
             e.preventDefault();
             break;
         case 40:
-            xVelocity = 0; yVelocity = 1;
+            changeDirection("down");
+            e.preventDefault();
+            break;
+    }
+}
+
+function changeDirection(direction) {
+    switch(direction) {
+        case "left":
+            if (xVelocity != 1) {
+                xVelocity = -1; yVelocity = 0;
+            }
+            e.preventDefault();
+            break;
+        case "up":
+            if (yVelocity != 1) {
+                xVelocity = 0; yVelocity = -1;
+            }
+            e.preventDefault();
+            break;
+        case "right":
+            if (xVelocity != -1) {
+                xVelocity = 1; yVelocity = 0;
+            }
+            e.preventDefault();
+            break;
+        case "down":
+            if (yVelocity != -1) {
+                xVelocity = 0; yVelocity = 1;
+            }
             e.preventDefault();
             break;
     }
