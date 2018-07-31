@@ -4,7 +4,7 @@
 
 **Total time spent:** 3 hours
 
-> Pro tip: The code of this game is dirty. I wouldn't recommend using or copying any code (but you are free to do so if you want to).
+> **Pro tip:** The code of this game is very dirty. I wouldn't recommend using or copying any code (but you are free to do so if you really want to).
 
 ### How to use
 1. Download repository
