@@ -12,6 +12,8 @@ foodX = foodY = 15;
 xVelocity = yVelocity = 0;
 trail = [];
 tail = 5;
+scoreTitle = document.getElementById("score")
+score = 0;
 
 function game() {
 
@@ -41,7 +43,9 @@ function game() {
     for( var i=0; i<trail.length; i++ ) {
 		context.fillRect(trail[i].x*gridSize,trail[i].y*gridSize,gridSize-2,gridSize-2);
 		if(trail[i].x==playerX && trail[i].y==playerY) {
-			tail = 5;
+            tail = 5;
+            score = 0;
+            scoreTitle.innerHTML = "Score: " + score;
 		}
 	}
 
@@ -52,6 +56,8 @@ function game() {
 
     if (foodX == playerX && foodY == playerY) {
         tail++;
+        score++;
+        scoreTitle.innerHTML = "Score: " + score;
         foodX = Math.floor(Math.random() * tileCount);
         foodY = Math.floor(Math.random() * tileCount);
     }
