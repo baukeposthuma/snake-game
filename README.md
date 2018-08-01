@@ -2,13 +2,13 @@
 
 ## One Day Builds **# 1.**
 
-**Total time spent:** 3 hours
+**Total time spent:** 2.5 hours
 
-> **Pro tip:** The code of this game is very dirty. I wouldn't recommend using or copying any code (but you are free to do so if you really want to).
+> **Pro tip:** The code of this snake game is very dirty. I wouldn't recommend using or copying any code (but you are free to do so if you really want to).
 
 ### How to use
-1. Download repository
-2. Open *'index.html'* in your browser
+1. Download this repository.
+2. Open *'index.html'* in your favorite browser.
 3. Start playing!
 
 ![Snake project preview](screenshot.png)
